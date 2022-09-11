@@ -8,6 +8,11 @@ target 'regProjectFirebase' do
   # Pods for regProjectFirebase
 
    pod 'SnapKit'
+   pod 'Firebase/Core'
+   pod 'Firebase/Auth'
+   pod 'Firebase/Database'
+
+
 
 
   target 'regProjectFirebaseTests' do

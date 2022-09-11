@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import FirebaseCore
+import FirebaseAuth
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -13,8 +15,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        FirebaseApp.configure()
+        Auth.auth().addStateDidChangeListener { auth, user in
+            if user == nil {
+                
+            }
+        }
+        
         return true
+    }
+    
+    func showModalAuth(){
+        
+//        let premiumVC = ViewController()
+//        self.navigationController?.pushViewController(premiumVC, animated: true)
+        
+//        let rootVC = ViewController()
+//        let nacVC = UINavigationController(rootViewController: rootVC)
+//        navigationController?.pushViewController(nacVC, animated: true)
+//        nacVC.modalPresentationStyle = .fullScreen
+//        present(nacVC, animated: true)
+        
     }
 
     // MARK: UISceneSession Lifecycle
