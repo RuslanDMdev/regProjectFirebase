@@ -11,6 +11,8 @@ import FirebaseAuth
 
 class ViewController: UIViewController {
 
+    
+    var window: UIWindow?
     let buttonStart = UIButton()
     let labelSingUp = UILabel()
     let emailField = UITextField()
@@ -182,17 +184,19 @@ class ViewController: UIViewController {
     @objc func openNextView(){
        
 
-//
-//        let rootVC = OrderViewController()
-//        let nacVC = UINavigationController(rootViewController: rootVC)
-//        nacVC.modalPresentationStyle = .fullScreen
-//        present(nacVC, animated: true)
+
+        let rootVC = UserViewController()
+        let nacVC = UINavigationController(rootViewController: rootVC)
+        nacVC.modalPresentationStyle = .fullScreen
+        present(nacVC, animated: true)
 
         
     }
 
     @objc private func didTapButton(){
         print("Continue button tapped")
+        
+        
         guard let email = emailField.text, !email.isEmpty,
               let password = passwordField.text, !password.isEmpty else{
             print("Missing field data")
@@ -219,11 +223,18 @@ class ViewController: UIViewController {
             }
             
             print("You have signed in")
+            
+//            let rootVC = UserViewController()
+//            let nacVC = UINavigationController(rootViewController: rootVC)
+//            nacVC.modalPresentationStyle = .fullScreen
+//            self?.window?.rootViewController?.present(nacVC, animated: true)
+//
+            
             strongSelf.labelName.isHidden = true
             strongSelf.emailField.isHidden = true
             strongSelf.passwordField.isHidden = true
             strongSelf.buttonStart.isHidden = true
-            
+
             strongSelf.emailField.resignFirstResponder()
             strongSelf.passwordField.resignFirstResponder()
             
