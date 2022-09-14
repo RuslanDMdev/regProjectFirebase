@@ -16,28 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
-        Auth.auth().addStateDidChangeListener { auth, user in
-            if user == nil {
-                
-            }
-        }
-        
         return true
     }
     
-    func showModalAuth(){
-        
-//        let premiumVC = ViewController()
-//        self.navigationController?.pushViewController(premiumVC, animated: true)
-        
-//        let rootVC = ViewController()
-//        let nacVC = UINavigationController(rootViewController: rootVC)
-//        navigationController?.pushViewController(nacVC, animated: true)
-//        nacVC.modalPresentationStyle = .fullScreen
-//        present(nacVC, animated: true)
-        
-    }
-
     // MARK: UISceneSession Lifecycle
 
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {

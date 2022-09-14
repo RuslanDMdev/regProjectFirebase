@@ -16,7 +16,7 @@
 		0C32AF1628BFDC1700F4A578 /* regProjectFirebaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C32AF1528BFDC1700F4A578 /* regProjectFirebaseTests.swift */; };
 		0C32AF2028BFDC1700F4A578 /* regProjectFirebaseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C32AF1F28BFDC1700F4A578 /* regProjectFirebaseUITests.swift */; };
 		0C32AF2228BFDC1700F4A578 /* regProjectFirebaseUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C32AF2128BFDC1700F4A578 /* regProjectFirebaseUITestsLaunchTests.swift */; };
-		0C32AF3028C0D4B000F4A578 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0C32AF2F28C0D4B000F4A578 /* GoogleService-Info.plist */; };
+		0C66CCE228D215B50058AFF6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0C66CCE128D215B50058AFF6 /* GoogleService-Info.plist */; };
 		52749278415536CACF53CFBA /* Pods_regProjectFirebaseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEF5F34779073729CF31B234 /* Pods_regProjectFirebaseTests.framework */; };
 		7228788CC11A9E614CCA3EDA /* Pods_regProjectFirebase_regProjectFirebaseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5031AFA8E580FF2A4045EA54 /* Pods_regProjectFirebase_regProjectFirebaseUITests.framework */; };
 /* End PBXBuildFile section */
@@ -51,7 +51,7 @@
 		0C32AF1B28BFDC1700F4A578 /* regProjectFirebaseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = regProjectFirebaseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C32AF1F28BFDC1700F4A578 /* regProjectFirebaseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = regProjectFirebaseUITests.swift; sourceTree = "<group>"; };
 		0C32AF2128BFDC1700F4A578 /* regProjectFirebaseUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = regProjectFirebaseUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		0C32AF2F28C0D4B000F4A578 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0C66CCE128D215B50058AFF6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0E4EB3E6B198EF6B47798D92 /* Pods-regProjectFirebaseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-regProjectFirebaseTests.release.xcconfig"; path = "Target Support Files/Pods-regProjectFirebaseTests/Pods-regProjectFirebaseTests.release.xcconfig"; sourceTree = "<group>"; };
 		3696A161943F43A7E8A54A55 /* Pods-regProjectFirebase-regProjectFirebaseUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-regProjectFirebase-regProjectFirebaseUITests.debug.xcconfig"; path = "Target Support Files/Pods-regProjectFirebase-regProjectFirebaseUITests/Pods-regProjectFirebase-regProjectFirebaseUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5031AFA8E580FF2A4045EA54 /* Pods_regProjectFirebase_regProjectFirebaseUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_regProjectFirebase_regProjectFirebaseUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -122,7 +122,7 @@
 				0C32AF0728BFDC1700F4A578 /* Assets.xcassets */,
 				0C32AF0928BFDC1700F4A578 /* LaunchScreen.storyboard */,
 				0C32AF0C28BFDC1700F4A578 /* Info.plist */,
-				0C32AF2F28C0D4B000F4A578 /* GoogleService-Info.plist */,
+				0C66CCE128D215B50058AFF6 /* GoogleService-Info.plist */,
 			);
 			path = regProjectFirebase;
 			sourceTree = "<group>";
@@ -277,8 +277,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C32AF0B28BFDC1700F4A578 /* LaunchScreen.storyboard in Resources */,
+				0C66CCE228D215B50058AFF6 /* GoogleService-Info.plist in Resources */,
 				0C32AF0828BFDC1700F4A578 /* Assets.xcassets in Resources */,
-				0C32AF3028C0D4B000F4A578 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
